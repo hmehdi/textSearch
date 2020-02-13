@@ -7,7 +7,6 @@ import scala.collection.immutable.ListMap
 
 object searchTextService {
 
-
   def getFilesOccurencePercentage(inMemoryFiles: Map[String, Map[String, Int]], wordsToSearch: List[String]): ListMap[String, Double] = {
 
     val FilesOccurence: Map[String, Double] = inMemoryFiles.map { case (key: String, value: Map[String, Int]) =>
